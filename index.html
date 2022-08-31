@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Nikita -Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
+  <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+ 
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="page-wrapper">
+ <div class="nav-wrapper">
+  <nav class="navbar">
+    <h1 class="logo">Nikki.</h1>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item"><a href="#">About</a></li>
+      <li class="nav-item"><a href="#">Portfolio</a></li>
+      <li class="nav-item"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+      var nav =document.querySelector("nav");
+      nav.classList.toggle("sticky",window.scrollY>50);        })
+</script>
+  </div>
+  <section class="home">
+    <div class="container">
+      <div class="content">
+      <p class="tags" >&#60;h1&#62;</p>
+       <h1 class="title" >Hi,</h1>
+           <h1 class="title">I'm Nikita<br>Software Engineer</h1>
+           <p class="tags">&#60;/h1&#62;</p><br>
+           <p class="tags">&#60;p&#62;</p>
+           <p class="sub-title"> Undergraduate Student | Frontend-Developer </p>
+           <p class="tags">&#60;/p&#62;</p>
+      </div>         
+      <!-- <div class="readmore-btn"><a href="#">Read More</a></div> -->
+   </div>  </section> 
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
