@@ -14,7 +14,7 @@
   <link href='https://fonts.googleapis.com/css?family=Sonsie One' rel='stylesheet'>
    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
   <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'><link rel="stylesheet" href="./style.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -31,7 +31,7 @@
     <ul class="nav">
       <li class="nav-item"><a href="#home">Home</a></li>
       <li class="nav-item"><a href="#about">About</a></li>
-      <li class="nav-item"><a href="#">Portfolio</a></li>
+      <li class="nav-item"><a href="#projects">Projects</a></li>
       <li class="nav-item"><a href="#">Contact</a></li>
     </ul>
   </nav>
@@ -52,7 +52,7 @@
            <p class="sub-title"> UnderGrad | Software Developer | Tech Enthusiast</p>
            <p class="tags">&#60;/p&#62;</p>
           
-            <a class="download" href="" ><span>Download CV</span></a>      
+            <a class="download" href="" ><span>Download CV</span><i class="material-icons">file_download</i></a>      
       </div>  
       <div class="me">
         <div class="image" data-aos="zoom-in-up">
@@ -76,7 +76,7 @@
       </div>       
    </div> 
  </section> 
- <section class="about" id="about">
+ <section class="about" id="about"  data-aos="fade-right">
      <h1>Who am I</h1>
      <div class="content">
         <p class="tags">&#60;p&#62;</p>
@@ -84,10 +84,53 @@
         <p>I'm passionate about programming and design. I love designing great UI. I'm also interested in sketching, playing games and music.</p>
         <p>I am excited to work as a Software Developer in a reputed organisation to enhance my skills and give best of my knowlegde to the organisation.</p>
         <p>I have a great knowlegde about technologies like C++, Java, Python, HTML, CSS, and more. In my past years I have developed many projects to improve my skills.</p>
-        <p class="tags">&#60;p&#62;</p>
+        <p class="tags">&#60;/p&#62;</p>
+        <a class="project-but" href="#projects"><span>See My Projects</span><i class="fa fa-long-arrow-right"></i></a>
       </div>
  </section>
-
+<section class="projects" id="projects">
+        <h1 data-aos="fade-left">My Work</h1>
+        <div class="container" data-aos="fade-left">
+          <div class="pro" data-aos="fade-left">
+            <div class="lang">
+              <img src="./images/html.png" width="30px" height="30px">
+              <img src="./images/css.png" width="30px" height="30px">
+              <img src="./images/php.png" width="30px" height="30px">
+              <img src="./images/mysql.png" width="30px" height="30px">
+            </div>
+            <div class="card-name">
+              <div class="pro-logo">
+                <img src="./images/hotel.png" width="50px" height="50px">
+              </div>
+              <a href="https://www.google.com"><div class="pro-name"><p>Hotel Management System</p></div> </a> 
+            </div>
+          </div>
+          <div class="pro" data-aos="fade-left">
+            <div class="lang">
+              <img src="./images/java.png" width="30px" height="30px">
+              <img src="./images/mysql.png" width="30px" height="30px">
+            </div>
+            <div class="card-name">
+              <div class="pro-logo">
+                <img src="./images/pills.png" width="50px" height="50px">
+              </div>
+              <a href="https://www.google.com"><div class="pro-name"><p>Medical Management System</p></div> </a> 
+            </div>
+          </div>
+              <div class="pro" data-aos="fade-left">
+                <div class="lang">
+                  <img src="./images/python.png" width="30px" height="30px">
+                  <img src="./images/mysql.png" width="30px" height="30px">
+                </div>
+                <div class="card-name">
+                  <div class="pro-logo">
+                    <img src="./images/cafe.png" width="50px" height="50px">
+                  </div>
+                  <a href="https://www.google.com"><div class="pro-name"><p>Cafe Inventory System</p></div> </a> 
+                </div>
+            </div>
+        </div>
+</section>
 <!-- partial -->
    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script><script  src="./script.js"></script>
    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>

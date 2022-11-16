@@ -2,6 +2,7 @@
   --bg-color: #fff;
   --element-color:#000000 ;
   --subtitle-color:#2b2b36;
+  --card-color:#EEEEFD;
 }
 
 * {
@@ -28,7 +29,9 @@
   /* HEADINGS */
   
  
-  
+ a{
+  text-decoration: none;
+ } 
   h1 {
     font-size: 2.2rem;
   }
@@ -123,13 +126,15 @@
     background:var(--bg-color);
     }
   /* SECTIONS */
-  
+   section{
+    padding-top: 5%;
+  } 
   .home {
     width: 100%; 
     background:var(--bg-color);
     background-size: cover;
     display: flex;
-  
+
     justify-content: center;
   }
   
@@ -181,13 +186,13 @@
     }
     .home .container .content .download{
       position:absolute;
-      margin-top: 20px;
+      margin-top: 30px;
       text-decoration: none;
-      border-radius: 30px 30px 0 30px;
-      padding:10px 30px;
+      border-radius: 50px 50px 10px 50px;
+      padding:15px 30px;
       background: var(--element-color);
       color:#fff;
-      
+      display: flex;
       font-family: Poppins;
       font-weight: 600;
       transition: all .5s;
@@ -195,10 +200,10 @@
 
     .home .container .content .download:hover{
       font-weight: 600;
-      padding:12px 32px;
-       color:var(--element-color);
-       background: var(--bg-color);
-       box-shadow: 0px 5px 20px #A5A4E5;
+      padding:10px 28px;
+      color:var(--element-color);
+      background: var(--bg-color);
+      box-shadow: 0px 5px 20px #A5A4E5;
     }
 
     .home .container .me .image .download{
@@ -255,7 +260,7 @@
 
     }
     .home .container .me .fb{
-      top:350px;
+      top:300px;
       left:90px
     }
     .home .container .me .git{
@@ -263,8 +268,8 @@
       top:40px;
     }
     .home .container .me .linkdn{
-      top:320px;
-      right:40px
+      top:270px;
+      right:60px
     }
     .home .container .me .insta img ,.home .container .me .fb img , .home .container .me .git img,.home .container .me .linkdn img{
       width:100px;
@@ -329,36 +334,129 @@
     transform: translateY(-8px) rotate(-45deg);
   }
   
- .about{
-  padding-top: 10%;
+ .about,.projects{
+  display: block;
+  padding-bottom: 40px;
   width:100%;
-  max-height: 100vh;
+  height:auto;
  }
- .about h1{
+ .about h1,.projects h1{
   text-align: center;
   font-family: 'Abril Fatface';
   letter-spacing: 2px;
   font-size: 3rem;
   
  }  
- .about .content {
-  padding:5% 20%;
+ .about .content{
+  padding:2% 20%;
 
  }
  .about .content p{
   padding-left: 20px;
-  font-size: 1rem;
+  font-size: .8rem;
   font-family: 'Poppins';
   text-align: justify;
   font-weight: 500;
   word-spacing: 5px;
-  line-height: 35px;
+  line-height: 30px;
  }
  .about .content .tags{
   padding:0;
   font-size: 1rem;
   font-family: 'Allura';
  }
+ .about .content .project-but{
+ position:absolute;
+ text-decoration: none;
+ font-family: Poppins;
+ font-weight: 600;
+ transition: all .5s;
+ color: #000;
+}
+.about .content .project-but span{
+  padding:8px 10px;
+}
+.about .content .project-but i{
+  background:#000000;
+  margin-left: 5px;
+  color:#fff;
+  border-radius: 50%;
+  padding: 15px;
+  transition: margin-left 2s;
+
+  
+}
+.about .content .project-but:hover{
+      margin-left:20px;
+      color:#A5A4E5;   
+}
+
+
+
+ /* ************************************* PROJECTS **************************** */
+.projects{
+  padding-top: 100px;
+}
+ .projects .container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding:10%;
+}
+.projects .container .pro{
+  position: relative;
+  border-radius: 20px;
+  width: 200px;
+  height: 150px;
+  margin:10px;
+  background: var(--card-color);
+}
+.projects .container .pro .lang{
+  padding:10px 20px;
+  margin-top: 10px;
+}
+.projects .container .pro .lang img{
+  margin:3px;
+ 
+}
+.projects .container .pro .card-name{
+  position:absolute;
+  bottom: 5px;
+  left:-20px;
+  right: -40px;
+  display: flex;
+  transition: all .5s;
+  align-items: center;
+}
+.projects .container .pro .card-name p{
+  padding: 5px 20px ;
+  background:#000;
+  color:#fff;
+  font-size: .8rem;
+  text-align: center;
+
+  border-radius: 0 10px 30px 0;
+  font-family: 'Poppins';
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: padding-right 2s;
+  
+}
+
+.projects .container .pro .card-name .pro-logo{
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  border: 2px solid #A5A4E5;
+  background: #fff;
+  cursor: pointer;
+ 
+}
+.projects .container .pro .card-name:hover{
+  padding-right:10px
+}
+
   /* Media Queries */
   
     /* Mobile Devices - Phones/Tablets */
@@ -479,7 +577,7 @@
 
     } 
   
-    .about h1{
+    .about h1,.projects h1{
         font-size: 1.9rem;   
     }
     .about .content {
@@ -492,5 +590,6 @@
        line-height: normal;
        word-spacing: 0; 
     }
+  
 
 }
