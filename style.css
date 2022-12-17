@@ -422,8 +422,8 @@
   height: 250px;
 
 }
-.projects .container .p1{
-  background:url('./images/healthcare.jpg');
+/* .projects .container .p1{
+  background:url('./images/medical.png');
   
   background-size: cover;
 }
@@ -433,13 +433,13 @@
   background-size: cover;
 }
 .projects .container .p3{
-  background:url('./images/cafe.png');
+  background:url('./images/inventory.jpg');
   background-size: cover;
 }
 .projects .container .p4{
-  background:url('./images/fire_alarm_guide.jpg');
+  background:url('./images/fire.png');
   background-size: cover;
-}
+} */
 
 .projects .container .project-card .project-name{
   position: absolute;
