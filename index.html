@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'><link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-  
+</head>
+<body>
 <!-- partial:index.partial.html -->
 <div class="page-wrapper">
  <div class="nav-wrapper">
@@ -30,7 +31,7 @@
       <li class="nav-item"><a href="#home">Home</a></li>
       <li class="nav-item"><a href="#about">About</a></li>
       <li class="nav-item"><a href="#projects">Projects</a></li>
-      <li class="nav-item"><a href="#">Contact</a></li>
+      <li class="nav-item"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   <script type="text/javascript">
@@ -50,12 +51,12 @@
            <p class="sub-title"> UnderGrad | Software Developer | Tech Enthusiast</p>
            <p class="tags">&#60;/p&#62;</p>
           
-            <a class="download" href="" ><span>Download CV</span><i class="material-icons">file_download</i></a>      
+            <a class="download" href="NikitaSambariDYPatil_Resume.pdf" download="NikitaSambariDYPatil_Resume.pdf"><span>Download CV</span><i class="material-icons">file_download</i></a>      
       </div>  
       <div class="me">
         <div class="image" data-aos="zoom-in-up">
         <img src="./images/me.png">
-        <a class="download" href=""><i class="material-icons">file_download</i></a>
+        <a class="download" ref="NikitaSambariDYPatil_Resume.pdf" download="NikitaSambariDYPatil_Resume.pdf">><i class="material-icons">file_download</i></a>
         
         </div>
         <div class="insta social" data-aos="zoom-in-down">
@@ -88,64 +89,122 @@
  </section>
 <section class="projects" id="projects"> 
         <h1>My Work</h1>
-        <div class="container">             
-          <div class="project-card p1">
-              <img src="./images/medical.png">
-              <div class="link">
-                <a href="#"><i class="fa fa-external-link"></i></a>
-              </div>
-              <div class="project-name">
-                  <a href=""><h2>Medical Management System</h2></a>
-              </div>
-          </div>
-          <div class="project-card p2">
-            <img src="./images/hotel.jpg">
-            <div class="link">
-              <a href="#"><i class="fa fa-external-link"></i></a>
-            </div>
+        <div class="wave"></div>
+        <div class="container">          
+          <div class="project-card">
+            <img class="class-icon" src="./images/card.png">
             <div class="project-name">
-                <a href=""><h2>Hotel Management System</h2></a>
+                  <h2>Medical Management<br>System</h2> 
+            </div>
+            <div class="img-box">
+              <img src="./images/medical.png" id="p-logo"> 
+            </div>
+              <div class="link-box">
+              <a class="link" href=""><i class="fa fa-external-link"></i></a>
+            </div>
+               
+             <div class="tech">
+                  <i class="devicon-java-plain"></i>
+                  <i class="devicon-mysql-plain"></i>
             </div>
         </div>
-        <div class="project-card p3">
-          <img src="./images/inventory.jpg">
-          <div class="link">
-            <a href="#"><i class="fa fa-external-link"></i></a>
-          </div>
-          <div class="project-name">
-              <a href=""><h2>Cafe Inventory System</h2></a>
-          </div>
-      </div>
-      <div class="project-card p4">
-        <img src="./images/fire.png">
-        <div class="link">
-          <a href="#"><i class="fa fa-external-link"></i></a>
-        </div>
-        <div class="project-name">
-            <a href=""><h2>Fire Alarm Detection</h2></a>
-        </div>
-    </div>
-        <!--   <div class="project-name">
-              <h2 data-text="Medical Management System">Medical Management System</h2>
-              <div class="tech">
-                <i class="devicon-java-plain"></i>
-                <i class="devicon-mysql-plain"></i>
-              </div>
-            </div>
-          </div>    -->
-          <!-- <div class="project-card">
-            <a href="#"><i class="fa fa-external-link link"></i></a>
-            <img src="./images/medical_logo.png">
+
+
+          <div class="project-card" data-aos="fade-up">
+            <img class="class-icon" src="./images/card.png">
             <div class="project-name">
-              <h2 data-text="Medical Management System">Medical Management System</h2>
-              <div class="tech">
-                <i class="devicon-java-plain"></i>
-                <i class="devicon-mysql-plain"></i>
-              </div>
+                  <a href=""><h2>Hotel Management<br> System</h2></a>   
             </div>
-          </div>    -->
+            <div class="img-box">
+              <img src="./images/hotel.jpg" id="p-logo"> 
+            </div>
+              <div class="link-box">
+              <a  class="link" href="#"><i class="fa fa-external-link"></i></a>
+            </div>
+              <div class="tech">
+                  <i class="devicon-html5-plain"></i>
+                  <i class="devicon-css3-plain"></i>
+                  <i class="devicon-php-plain"></i>
+                  <i class="devicon-mysql-plain"></i>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up">
+            <img class="class-icon" src="./images/card.png">
+            <div class="project-name">
+                  <a href=""><h2>Cafe Inventory<br> System</h2></a>   
+            </div>
+            <div class="img-box">
+              <img src="./images/inventory.jpg" id="p-logo"> 
+            </div>
+              <div class="link-box">
+              <a  class="link" href="#"><i class="fa fa-external-link"></i></a>
+            </div>
+              <div class="tech">
+                  <i class="devicon-python-plain"></i>
+                  <i class="devicon-mysql-plain"></i>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up">
+            <img class="class-icon" src="./images/card.png">
+            <div class="project-name">
+                  <a href=""><h2>Fire Alarm<br> System</h2></a>   
+            </div>
+            <div class="img-box">
+              <img src="./images/fire.png" id="p-logo"> 
+            </div>
+              <div class="link-box">
+                <a  class="link" href="#"><i class="fa fa-external-link"></i></a>
+              </div>
+               <div class="tech">
+                  <i class="devicon-python-plain"></i>
+                  <i class="devicon-mysql-plain"></i>
+            </div>
+          </div>
+     
         </div>
+       
     
+</section>
+
+<section class="contact" id="contact">
+  <h1>Get In Touch</h1>
+  <div class="container">
+    <div class="shape s1"></div>
+    <div class="shape s2"></div>
+    <div class="contact-form">
+      <div class="ele" data-aos="zoom-in-up">
+        <input class="text-box" name="email" type="email" id="email" placeholder="Email ID"/>
+      </div>
+      <div class="ele" data-aos="zoom-in-up">
+        <textarea class="text-box" name="message" placeholder="Write Your Thoughts"></textarea>
+    </div>
+      <div class="ele"  data-aos="fade-up">
+        <button class="send-msg" name="send" type="submit">Send Message</button>
+      </div>
+     </div>
+   
+  </div>
+  
+
+</section>
+
+<section class="footer">
+<div class="social" data-aos="zoom-in-up">
+  <div class="line"></div>
+  <div class="social-media">
+    <a href="#"><i class="fab fa-facebook" id="fb" aria-hidden="true"></i></a></li>
+    <a href="#"><i class="fa fa-github" id="github"></i></a>
+    <a href="#"><i class="fab fa-linkedin" id="linkedin" aria-hidden="true"></i></a></li>
+  </div>
+  <div class="line"></div>
+ 
+</div>
+<div class="created">
+  <p>Created with by<i class="fa fa-heart"></i> <a href="">Nikita</a></p>
+</div>
+
 </section>
 <!-- partial -->
    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script><script  src="./script.js"></script>
