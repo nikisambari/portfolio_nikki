@@ -14,6 +14,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'><link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('service_30zpwtr');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                // this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -100,7 +124,7 @@
               <img src="./images/medical.png" id="p-logo"> 
             </div>
               <div class="link-box">
-              <a class="link" href=""><i class="fa fa-external-link"></i></a>
+              <a class="link" href="https://github.com/nikisambari/medical-mgt-system"><i class="fa fa-external-link"></i></a>
             </div>
                
              <div class="tech">
@@ -113,13 +137,13 @@
           <div class="project-card" data-aos="fade-up">
             <img class="class-icon" src="./images/card.png">
             <div class="project-name">
-                  <a href=""><h2>Hotel Management<br> System</h2></a>   
+                  <h2>Hotel Management<br> System</h2>  
             </div>
             <div class="img-box">
               <img src="./images/hotel.jpg" id="p-logo"> 
             </div>
               <div class="link-box">
-              <a  class="link" href="#"><i class="fa fa-external-link"></i></a>
+              <a  class="link" href="https://github.com/nikisambari/hotels"><i class="fa fa-external-link"></i></a>
             </div>
               <div class="tech">
                   <i class="devicon-html5-plain"></i>
@@ -132,13 +156,13 @@
           <div class="project-card" data-aos="fade-up">
             <img class="class-icon" src="./images/card.png">
             <div class="project-name">
-                  <a href=""><h2>Cafe Inventory<br> System</h2></a>   
+                 <h2>Cafe Inventory<br> System</h2>
             </div>
             <div class="img-box">
               <img src="./images/inventory.jpg" id="p-logo"> 
             </div>
               <div class="link-box">
-              <a  class="link" href="#"><i class="fa fa-external-link"></i></a>
+              <a  class="link" href="https://github.com/nikisambari/cafe-inventory-sys"><i class="fa fa-external-link"></i></a>
             </div>
               <div class="tech">
                   <i class="devicon-python-plain"></i>
@@ -155,7 +179,7 @@
               <img src="./images/fire.png" id="p-logo"> 
             </div>
               <div class="link-box">
-                <a  class="link" href="#"><i class="fa fa-external-link"></i></a>
+                <a  class="link" href="https://github.com/nikisambari/firealarm"><i class="fa fa-external-link"></i></a>
               </div>
                <div class="tech">
                   <i class="devicon-python-plain"></i>
@@ -174,15 +198,17 @@
     <div class="shape s1"></div>
     <div class="shape s2"></div>
     <div class="contact-form">
+       <!-- <form method="post" id="contact-form"> -->
       <div class="ele" data-aos="zoom-in-up">
         <input class="text-box" name="email" type="email" id="email" placeholder="Email ID"/>
       </div>
       <div class="ele" data-aos="zoom-in-up">
-        <textarea class="text-box" name="message" placeholder="Write Your Thoughts"></textarea>
+        <textarea class="text-box" name="message" id="message" placeholder="Write Your Thoughts"></textarea>
     </div>
       <div class="ele"  data-aos="fade-up">
-        <button class="send-msg" name="send" type="submit">Send Message</button>
+        <button class="send-msg" onclick="sendEmail()" name="send" type="submit">Send Message</button>
       </div>
+      <!-- </form> -->
      </div>
    
   </div>
