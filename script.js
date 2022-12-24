@@ -14,6 +14,6 @@ $(window).on('load',function(){
       'overflow': 'auto'
     })
 	$('.page-loader').fadeOut('slow');
-	},4000);
+	},2500);
   
 });
