@@ -14,33 +14,35 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'><link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('service_30zpwtr');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                // this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-
+  
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<div class="page-loader" id="loader">
+  <div class="logo-holder">
+    <span>&#60;  &#62;</span>
+    <div class="bar"></div>
+    <div class="bar fill1"></div>
+    <div class="bar fill2"></div>
+    <div class="bar fill3"></div>
+    <div class="bar fill4"></div>
+    <div class="bar fill1"></div>
+    <div class="bar fill5"></div>
+    <div class="bar fill6"></div>
+    <div class="bar"></div>
+    <span>&#60;  &#62;</span>
+  </div>
+<div class="get-code">
+ <h1>&#60;/Nikki&#62;</h1>
+</div>
+  
+  
+  
+
+</div>
+<script>
+ 
+</script>
 <div class="page-wrapper">
  <div class="nav-wrapper">
   <nav class="navbar">
@@ -63,7 +65,7 @@
       var nav =document.querySelector("nav");
       nav.classList.toggle("sticky",window.scrollY>50); })
 </script>
-  </div>
+</div>
   <section class="home" id="home">
     <div class="container">
      <div class="content" data-aos="fade-right"> 
@@ -80,20 +82,21 @@
       <div class="me">
         <div class="image" data-aos="zoom-in-up">
         <img src="./images/me.png">
-        <a class="download" href="NikitaSambariDYPatil_Resume.pdf" download="NikitaSambariDYPatil_Resume.pdf"><i class="material-icons">file_download</i></a>
+        <a class="download" href="NikitaSambariDYPatil_Resume.pdf" download="NikitaSambariDYPatil_Resume.pdf"><i class="material-icons" style="text-align:center">file_download</i></a>
         
         </div>
         <div class="insta social" data-aos="zoom-in-down">
-          <a href="https://www.instagram.com/_nikkkkiiiii__/"><img src="./images/instagram.png"></a>
+         
+          <a target="_blank" href="https://www.instagram.com/_nikkkkiiiii__/"><img src="./images/instagram.png"></a>
         </div>
         <div class="fb social" data-aos="zoom-in-up">
-          <a href="https://www.facebook.com/nikita.sambari/"><img src="./images/facebook.png"></a>
+          <a target="_blank"  href="https://www.facebook.com/nikita.sambari/"><img src="./images/facebook.png"></a>
        </div>
        <div class="git social" data-aos="zoom-in-up">
-        <a href="https://github.com/nikisambari"><img src="./images/github.png"></a>
+        <a target="_blank" href="https://github.com/nikisambari"><img src="./images/github.png"></a>
      </div>
      <div class="linkdn social" data-aos="zoom-in-up">
-      <a href="https://www.linkedin.com/in/nikita-sambari-625394187/"><img src="./images/linkedin.png"></a>
+      <a target="_blank" href="https://www.linkedin.com/in/nikita-sambari-625394187/"><img src="./images/linkedin.png"></a>
      </div>
     
       </div>       
@@ -124,7 +127,7 @@
               <img src="./images/medical.png" id="p-logo"> 
             </div>
               <div class="link-box">
-              <a class="link" href="https://github.com/nikisambari/medical-mgt-system"><i class="fa fa-external-link"></i></a>
+              <a class="link" target="_blank"  href="https://github.com/nikisambari/medical-mgt-system"><i class="fa fa-external-link"></i></a>
             </div>
                
              <div class="tech">
@@ -143,7 +146,7 @@
               <img src="./images/hotel.jpg" id="p-logo"> 
             </div>
               <div class="link-box">
-              <a  class="link" href="https://github.com/nikisambari/hotels"><i class="fa fa-external-link"></i></a>
+              <a  class="link" target="_blank"  href="https://github.com/nikisambari/hotels"><i class="fa fa-external-link"></i></a>
             </div>
               <div class="tech">
                   <i class="devicon-html5-plain"></i>
@@ -162,7 +165,7 @@
               <img src="./images/inventory.jpg" id="p-logo"> 
             </div>
               <div class="link-box">
-              <a  class="link" href="https://github.com/nikisambari/cafe-inventory-sys"><i class="fa fa-external-link"></i></a>
+              <a  class="link" target="_blank"  href="https://github.com/nikisambari/cafe-inventory-sys"><i class="fa fa-external-link"></i></a>
             </div>
               <div class="tech">
                   <i class="devicon-python-plain"></i>
@@ -179,7 +182,7 @@
               <img src="./images/fire.png" id="p-logo"> 
             </div>
               <div class="link-box">
-                <a  class="link" href="https://github.com/nikisambari/firealarm"><i class="fa fa-external-link"></i></a>
+                <a  class="link" target="_blank" href="https://github.com/nikisambari/firealarm"><i class="fa fa-external-link"></i></a>
               </div>
                <div class="tech">
                   <i class="devicon-python-plain"></i>
@@ -198,15 +201,15 @@
     <div class="shape s1"></div>
     <div class="shape s2"></div>
     <div class="contact-form">
-       <!-- <form method="post" id="contact-form"> -->
+      <!-- <form method="post" id="contact-form">
       <div class="ele" data-aos="zoom-in-up">
         <input class="text-box" name="email" type="email" id="email" placeholder="Email ID"/>
-      </div>
-      <div class="ele" data-aos="zoom-in-up">
-        <textarea class="text-box" name="message" id="message" placeholder="Write Your Thoughts"></textarea>
-    </div>
-      <div class="ele"  data-aos="fade-up">
-        <button class="send-msg" onclick="sendEmail()" name="send" type="submit">Send Message</button>
+      </div> -->
+      <div class="ele ele-1" data-aos="zoom-in-up">
+        <img id="msg-icon" src="./images/msg.png">
+      </div> 
+      <div class="ele" data-aos="fade-up">
+        <a class="send-msg" target="_blank"  href="mailto:sambarinikita@gmail.com" name="send" type="submit"><i class="material-icons">email</i>sambarinikita@gmail.com</a>
       </div>
       <!-- </form> -->
      </div>
@@ -217,18 +220,18 @@
 </section>
 
 <section class="footer">
-<div class="social" data-aos="zoom-in-up">
+<div class="social-m" data-aos="zoom-in-up">
   <div class="line"></div>
   <div class="social-media">
-    <a href="https://www.facebook.com/nikita.sambari/"><i class="fab fa-facebook" id="fb" aria-hidden="true"></i></a></li>
-    <a href="https://github.com/nikisambari"><i class="fa fa-github" id="github"></i></a>
-    <a href="https://www.linkedin.com/in/nikita-sambari-625394187/"><i class="fab fa-linkedin" id="linkedin" aria-hidden="true"></i></a></li>
+    <a class="fgl" target="_blank"  href="https://www.facebook.com/nikita.sambari/"><i class="fab fa-facebook" id="fb" aria-hidden="true"></i></a></li>
+    <a class="fgl" target="_blank" href="https://github.com/nikisambari"><i class="fa fa-github" id="github"></i></a>
+    <a class="fgl" target="_blank"  href="https://www.linkedin.com/in/nikita-sambari-625394187/"><i class="fab fa-linkedin" id="linkedin" aria-hidden="true"></i></a></li>
   </div>
   <div class="line"></div>
  
 </div>
 <div class="created">
-  <p>Created with<i class="fa fa-heart"></i> by <a href="https://github.com/nikisambari">Nikita</a></p>
+  <p>Created with<i class="fa fa-heart"></i> by <a target="_blank" href="https://github.com/nikisambari">Nikita</a></p>
 </div>
 
 </section>

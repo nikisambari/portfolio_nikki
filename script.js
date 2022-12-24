@@ -7,3 +7,13 @@ AOS.init({
   duration: 1200,
 });
 
+$(window).on('load',function(){
+	setTimeout(function(){
+    $('html, body')
+    .css({
+      'overflow': 'auto'
+    })
+	$('.page-loader').fadeOut('slow');
+	},4000);
+  
+});
