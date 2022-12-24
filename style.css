@@ -454,7 +454,6 @@ animation: fill-1 5s infinite alternate, colors 5s infinite alternate;
       
     } 
     .home .container .me .social{
-
       display: flex;
       justify-content: center;
       align-items: center;
@@ -841,7 +840,7 @@ border: 2px solid rgba(233, 231, 255, 0.819);
   width: 100%;
   cursor: pointer;
   padding:20px 20px;
-  font-size: 1rem;
+  font-size: 1rem; 
   font-family: Poppins;
   color:#fff;
   font-weight: 900;
@@ -1152,7 +1151,7 @@ border: 2px solid rgba(233, 231, 255, 0.819);
  
   
 }
-.contact .container .contact-form .ele .text-box{
+.contact .container .contact-form .ele .send-msg{
   font-size: .8rem;
 }
 .footer .social .social-media{
